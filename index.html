@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Formulário</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/elements.css">
+</head>
+
+<body>
+    <section class="container">
+        <h1>Formulário de Cadastro</h1>
+        <ul>
+            <li>Nenhum campo pode estar vazio</li>
+            <li>Usuário só poderá conter letras e/ou números</li>
+            <li>Usuário deverá ter entre 3 e 12 caracteres</li>
+            <li>Senha precisa ter entre 6 e 12 caracteres</li>
+        </ul>
+        <form action="#" method="get" target="_blank" autocomplete="off">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome">
+                <p class="error"></p>
+            </div>
+
+            <div>
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome">
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf">
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario">
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha">
+                <p class="error"></p>
+            </div>
+            <div>
+                <label for="repetir-senha">Repetir senha:</label>
+                <input type="password" id="repetir-senha">
+                <p class="error"></p>
+            </div>
+            <button class="btn" type="button">Enviar</button>
+            <p id="alright"></p>
+        </form>
+    </section>
+    <script src="./assets/js/entity.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

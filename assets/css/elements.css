@@ -1,0 +1,32 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+    & input {
+        font-size: 1.2em;
+        padding: 0.3em 0.8em;
+
+        &:focus {
+            box-shadow: 0 0 5px var(--primary-color);
+        }
+    }
+
+    & p {
+        font-size: 0.7em;
+        color: red;
+    }
+
+    & div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #alright {
+        font-size: 0.7em;
+        margin: 0;
+        background: rgb(94, 255, 94);
+        color: black;
+        padding: 0 0.5rem;
+    }
+
+}
